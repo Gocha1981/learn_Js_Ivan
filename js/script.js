@@ -1,14 +1,19 @@
-// alert('Hello');
+const numberOfFilms = prompt('Сколько фильмов вы ужу посмотрели?', '');
 
-// const result = confirm("Are you here?");
-// alert(result);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const answer = +prompt("Вам есть 18?", "");
-// console.log(answer);10
+const a = prompt('Один из последних просмотренных фильмов?', '');
+      b = prompt('На сколько оцените его?', '');
+      c = prompt('Один из последних просмотренных фильмов?', '');
+      d = prompt('На сколько оцените его?', '');
 
-const answers = [];
-answers[0] = prompt("Как ваше имя?", "");
-answers[1] = prompt("Как ваше фамилия?", "");
-answers[2] = prompt("Сколько вам лет?", "");
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(answers);
+console.log(personalMovieDB);
